@@ -2,11 +2,24 @@
 <html>
     <head>
         <title>Aprendendo JavaScript básico</title>
+        <meta charset="utf-8">
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
     <body>
         <script>
             alert(nome);
+            nome = prompt("Qual é o seu nome ?");
+            if(nome == null){
+                while(nome == null){
+                    nome = prompt("É necessario que você insira seu nome!");
+                }
+                alert("Seu nome é: "+nome);
+            }else{
+                alert("Seu nome é: "+nome);
+            }
+
+            document.write("<p>É por isso que seu nome é necessario <strong>"+nome+"</strong> para que ele fique aqui!");
+            
         </script>
     </body>
 </html>
