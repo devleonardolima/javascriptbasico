@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
-    <body>
+    <body onload="Resetar()">
 
         <script>
             alert(nome);
@@ -24,7 +24,28 @@
 
         <!-- Também poderia ser feito dessa forma (sem função) <button onclick="window.location.href = 'http://fatecjales.edu.br';">Fatec Jales</button> -->
         <button onclick="Redirecionar()">Redirecionar</button>
-        <button onclick="MudarNome(nome)">Mudar seu nome</button>
-        
+        <button onclick="MudarNome(nome)">Mudar seu nome</button></br></br></br>
+
+        <h2>Receita de Bolo</h2>
+        <input id="ingrediente" type="text">
+        <button onclick="AdicionarIngrediente()">Adicionar</button>
+
+        <ul id="ingredientes">
+            <li>Trigo</li>
+            <li>Feijão</li>
+            <li>Cacau</li>
+        </ul>
+
+        <input type="text" id="valor1">
+        <input type="text" id="valor2">
+        <button onclick="Somar()">Somar</button>
+        <button onclick="Subtrair()">Subtrair</button>
+        <button onclick="Multiplicar()">Multiplicar</button>
+        <button onclick="Dividir()">Dividir</button><br><br><br>
+
+        <div id="num1">0</div>
+        <input type="text" id="num2">
+        <button onclick="Verificar()">Verificar</button>
+
     </body>
 </html>
