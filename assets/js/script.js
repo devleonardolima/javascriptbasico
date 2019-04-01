@@ -7,9 +7,26 @@ Como você pode !!
 var lista = Array();
 var nome = "Leonardo";
 
-function Redirecionar(){
+function RedirecionarHome(){
+    window.location.href = 'index.html';
+}
+
+function RedirecionarCurso(){
     window.location.href = 'https://alunos.b7web.com.br/';
 }
+
+function RedirecionarJogo(){
+    window.location.href = 'jogo.html';
+}
+
+function RedirecionarReceita(){
+    window.location.href = 'receita.html';
+}
+
+function RedirecionarCalculadora(){
+    window.location.href = 'calculadora.html';
+}
+
 
 function MudarNome(){
     var antigonome = nome;
@@ -41,6 +58,7 @@ function AdicionarIngrediente(){
     receita = receita + "<li>"+ingrediente+"<li>";
 
     document.getElementById('ingredientes').innerHTML = receita;
+    document.getElementById('ingrediente').value = "";
 }
 
 function Somar(){
